@@ -1,0 +1,21 @@
+/* Test font-feature-settings() with no arguments */
+
+/* Test font-feature-settings() with a single value */
+.bar {
+  -moz-font-feature-settings: "clig" 1;
+  -moz-font-feature-settings: "clig=1";
+  -ms-font-feature-settings: "clig" 1;
+  -o-font-feature-settings: "clig" 1;
+  -webkit-font-feature-settings: "clig" 1;
+  font-feature-settings: "clig" 1;
+}
+
+/* Test font-feature-settings() with multiple values */
+.baz {
+  -moz-font-feature-settings: "case" 1, "expt" 1, "fin2" 1, "fin3" 1, "fina" 1;
+  -moz-font-feature-settings: "case=1", "expt=1", "fin2=1", "fin3=1", "fina=1";
+  -ms-font-feature-settings: "case" 1, "expt" 1, "fin2" 1, "fin3" 1, "fina" 1;
+  -o-font-feature-settings: "case" 1, "expt" 1, "fin2" 1, "fin3" 1, "fina" 1;
+  -webkit-font-feature-settings: "case" 1, "expt" 1, "fin2" 1, "fin3" 1, "fina" 1;
+  font-feature-settings: "case" 1, "expt" 1, "fin2" 1, "fin3" 1, "fina" 1;
+}

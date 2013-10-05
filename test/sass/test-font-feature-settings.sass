@@ -1,0 +1,13 @@
+@import "../../stylesheets/font-feature-settings"
+
+/* Test font-feature-settings() with no arguments */
+.foo
+  +font-feature-settings()
+
+/* Test font-feature-settings() with a single value */
+.bar
+  +font-feature-settings(clig)
+
+/* Test font-feature-settings() with multiple values */
+.baz
+  +font-feature-settings(case expt fin2 fin3 fina)
