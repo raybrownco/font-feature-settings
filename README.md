@@ -23,11 +23,12 @@ SCSS syntax:
 
 ```scss
 // Import the rem partial
-@import "my-partials-path/font-feature-settings"
+@import "my-partials-path/font-feature-settings";
 
 // Pass a Sass list of features into the mixin to enable those features
-table.accounting-style
-  +font-feature-settings(lnum tnum)
+table.accounting-style {
+  @include font-feature-settings(lnum tnum);
+}
 ```
 
 The following CSS will be produced:
